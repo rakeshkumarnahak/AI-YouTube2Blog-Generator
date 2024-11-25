@@ -1,0 +1,20 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+djangorestframework = "*"
+pytube = "*"
+yt-dlp = "*"
+google-generativeai = "*"
+python-dotenv = "*"
+django-cors-headers = "*"
+gunicorn = "*"
+whitenoise = "*"
+psycopg2-binary = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.12"

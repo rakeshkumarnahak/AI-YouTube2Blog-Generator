@@ -1,0 +1,37 @@
+# Python-related files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.sqlite3
+
+# Django-related files
+db.sqlite3
+
+# Virtual environment
+env/
+venv/
+
+# OS-related files
+.DS_Store
+Thumbs.db
+
+# IDE/Editor settings
+.vscode/
+.idea/
+
+# Environment variables and secrets
+.env
+
+# Logs and temporary files
+*.log
+*.bak
+*.swp
+
+# Vercel build files
+.staticfiles/
+build/
+output/
+
+# Pipenv files (if you want to include only Pipfile.lock)
+Pipfile.lock
