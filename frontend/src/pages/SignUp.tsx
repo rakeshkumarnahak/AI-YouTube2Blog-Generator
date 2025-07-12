@@ -19,7 +19,7 @@ export function SignUp() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        `${import.meta.env.VITE_BACKEND_BASE_URL}/login`,
+        `${import.meta.env.VITE_BACKEND_BASE_URL}/signup`,
         {
           username,
           email,
