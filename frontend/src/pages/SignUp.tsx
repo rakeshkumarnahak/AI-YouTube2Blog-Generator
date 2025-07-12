@@ -13,13 +13,17 @@ export function SignUp() {
   const navigate = useNavigate();
   const { toast } = useToast();
 
-  console.log(import.meta.env.VITE_BACKEND_BASE_URL);
+  const backendBaseURL = import.meta.env.VITE_BACKEND_BASE_URL.endsWith("/")
+    ? import.meta.env.VITE_BACKEND_BASE_URL.slice(0, -1)
+    : import.meta.env.VITE_BACKEND_BASE_URL;
+
+  console.log(backendBaseURL);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        `${import.meta.env.VITE_BACKEND_BASE_URL}/signup`,
+        `${backendBaseURL}/signup`,
         {
           username,
           email,
